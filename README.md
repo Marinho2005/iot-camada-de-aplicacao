@@ -1,3 +1,16 @@
+# 🌡️💡 Projeto IoT com ESP32 — Monitoramento de Temperatura, Luminosidade e Controle RGB
+
+Este projeto utiliza um **ESP32** conectado à **Arduino IoT Cloud** para monitorar **temperatura**, **luminosidade** e controlar **LEDs RGB** e **buzzer** em tempo real.  
+O sistema permite controle remoto via nuvem, leitura de sensores e interação física através de um botão e de um potenciômetro.
+
+---
+
+## 🧠 Funcionalidades
+
+✅ **Leitura de sensores**
+- **DHT11** → mede a **temperatura ambiente**  
+- **LDR** → mede a **intensidade de luz**  
+- **Potenciômetro** → controla dinamicamente a **cor do LED RGB**
 
 ✅ **Atuadores**
 - **LED RGB** controlado por PWM, com cores suaves baseadas na posição do potenciômetro  
@@ -60,10 +73,6 @@ O dashboard exibe:
 - Botão de **habilitar/desabilitar sensores**
 - Controle de **cor do LED (vermelho, amarelo, azul)**
 
----
-## 🖥️ Dashboard Arduino IoT Cloud
-
-
 ![Dashboard Arduino IoT Cloud](images/dashboard.png)
 
 
@@ -75,8 +84,6 @@ O dashboard exibe:
 #include <DHT_U.h>
 #include <ArduinoIoTCloud.h>
 #include <Arduino_ConnectionHandler.h>
-
-
 
 
 
