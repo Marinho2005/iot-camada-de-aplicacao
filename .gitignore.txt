@@ -1,0 +1,40 @@
+# --- Arquivos de sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Configurações locais ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Compilação Arduino ---
+*.elf
+*.bin
+*.hex
+*.eep
+*.map
+*.out
+
+# --- Arquivos temporários ---
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# --- Pastas de build ---
+build/
+cmake-build-*/
+__pycache__/
+
+# --- Backups do Arduino IDE ---
+*.ino.backup
+*.ino.cpp
+
+# --- Arquivos ocultos do Windows ---
+desktop.ini
+
+# --- Caso futuramente use credenciais ---
+# (mas não afeta nada se não existir)
+secrets.h
+arduino_secrets.h
